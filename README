@@ -1,0 +1,18 @@
+
+friendly_digest:  Makes passing IDs around less error prone and user-friendly
+------------------------------------------------------------------------------
+
+Avoids mistakes like 0 vs O, 1 vs L
+
+gem install 'friendly_digest'
+
+
+ require 'friendly_digest'
+
+ irb> FriendlyDigest.new(12345)
+   => "4AD"
+
+ irb> FriendlyDigest.decode('4ad')
+   => 12345
+
+
