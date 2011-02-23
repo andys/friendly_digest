@@ -16,3 +16,28 @@ gem install 'friendly_digest'
    => 12345
 
 
+
+New! Parity flag
+----------------
+
+Adds a 1 character checksum to detect input mistakes.
+
+ irb> FriendlyDigest.new(12345, true)
+   => "4ADM"
+
+ irb> FriendlyDigest.decode('4adm', true)
+   => 12345
+
+ irb> FriendlyDigest.decode('4abm', true)
+ FriendlyDigest::InvalidInputException: Invalid input
+
+
+
+
+Contact the author
+------------------
+
+Andrew Snow <andrew@modulus.org>
+Andys^ on irc.freenode.net
+@andy_snow on the twitter
+

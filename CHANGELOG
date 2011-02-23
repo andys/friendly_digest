@@ -1,1 +1,2 @@
+v1.1. Flag which adds a one character checksum for sanity checking
 v1.0. Initial commit. Only supports integers.

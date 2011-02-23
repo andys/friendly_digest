@@ -4,3 +4,4 @@ Manifest
 README
 Rakefile
 lib/friendly_digest.rb
+test/test_all.rb
